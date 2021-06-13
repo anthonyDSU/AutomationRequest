@@ -1,4 +1,4 @@
-**Application Name:** AutomationRequest
+# **Application Name:** AutomationRequest
 
 **Tool Objective:** Quickly send thousands of web requests using goroutines for multiple purposes.
 
@@ -22,7 +22,7 @@ You may ask, why is this important for a security tool?
 
 Let's say your internal red team at company X, and your job is to report all vulnerabilities. This past week, the F5-big IP RCE has dropped, and the business wants to know its effect. Most companies have pretty damn large networks, and I'm just speaking from an internal aspect. Typical, you'll see a 10.0.0.1/8, which is around 16 million hosts per subnet, and then any of those hosts can run this application on X number of ports. What I'm trying to paint for you is an actual photo. We'll first look at any release POC, and we'll quickly see it's using HTTPS on the standard port, with the path /tmui/login.JSP. With this in hand and our newly found goscript, we can quickly enumerate the company. We can now pull down each webserver by first trying to establish a connection. If any reports back within the parameters we set in the script, that will be printed out. From here, we can manually asset what we are dealing with.
 
-
+#
 
 **Why is this important, and what about OPSec?**
 
